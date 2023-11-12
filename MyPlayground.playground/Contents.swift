@@ -7,7 +7,7 @@ struct Business
 	let businessLine: String
 	func businessMSG()
 	{
-		print("Please choose your line of business \(businessLine)")
+		print("\(businessLine)")
 	}
 }
 // Allows for user to select between assigned stations in business line
@@ -37,7 +37,6 @@ struct Site
 		print("Welcome to \(stationBlurb), More Resources!")
 	} */
 }
-
 struct Person
 {
 	let userName: String
@@ -47,7 +46,7 @@ struct Person
 	
 	func userID()
 	{
-		print("Hello \(userName)")
+		print("\(userName)")
 	}
 	func displayFullName()
 	{
@@ -60,6 +59,26 @@ struct Person
 	func displayLastName()
 	{
 		print("\(prefix) \(lastName) Have a great day!")
+	}
+}
+// Mathematical Structures for adding or subtracting from a list and setting limits to the overall range of things able to access
+struct SwagBucks
+{
+	let startingBalance: Double = 0
+	var userBalance: Double
+	var addedSwagBucks: Double
+	
+	func updateSwagBalance()
+	{
+		let userBalance = balance
+		print("Your current balance is \(userBalance)")
+		let addedSwagBucks = 5
+		print("You have added \(addedSwagBucks) to account.")
+	}
+	func displayBalance()
+	{
+		let userBalance =  startingBalance + addedSwagBucks
+		print("Your new balance: $\(userBalance) Swag Bucks.")
 	}
 }
 
@@ -76,16 +95,51 @@ let siteCode2 = Site(siteCode: "DTJ6") // AMZL SITE
 let aToZUser = Person(userName: "Ftrevis", firstName: "Trevis", lastName: "Fields", prefix: "Mr.")
 let aToZUser1 = Person(userName: "Mjdawqa", firstName: "Martha", lastName: "Scroll", prefix: "Ms.")
 
+let balance = SwagBucks(userBalance: 1000, addedSwagBucks: 1000)
+
+
 
 /**************************************************************************/
 
 // Display output to console
-businessLine1.businessMSG()
-siteCode1.siteGreeting()
-siteCode2.siteGreeting()
-aToZUser.userID()
-aToZUser.displayFullName()
 
+let choice = 2
+switch choice
+{
+case 1:
+	businessLine2.businessMSG()
+	siteCode2.siteGreeting()
+	aToZUser.userID()
+break
+case 2:
+		aToZUser.displayLastName()
+break
+default:
+print("Would you like to create an account today?")
+	break
+}
+
+
+class ViewController: UIViewController
+{
+	
+override func viewDidLoad()
+	{
+		super.viewDidLoad()
+		// Do any additional setup after loading the view, typically from a nib.
+		var names = ["Tammy", "Cole"]
+		names.removeFirst()
+		names.removeFirst()
+		names.removeFirst()
+	}
+		override func didReceiveMemoryWarning()
+		{
+			super.didReceiveMemoryWarning()
+			// Dispose of any resources that can be recreated.
+	}
+}
 /**************************************************************************/
 
 // Put Code Notes Here for Large Details
+
+
