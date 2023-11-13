@@ -176,3 +176,22 @@ func getFullName() -> String
 }
 
 getFullName()
+
+// Mark: Guard Statements
+var email = "test@gmail.com"
+var phoneNumber: String?
+
+func sendConfirmation()
+{
+	print("Did call Function")
+	guard let number = phoneNumber
+	else
+	{ print("Send email confirmation to: \(email)")
+		return
+	}
+	print("Send text confirmation to number: \(number)")
+}
+sendConfirmation()
+
+phoneNumber = 555-555-5555
+sendConfirmation()
