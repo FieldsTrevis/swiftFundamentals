@@ -48,7 +48,7 @@ items
 var nameToEmailDict = ["Trevis": "Trevis42@gmail.com", "Jarvis": "Jarvisfields@msn.com"]
 var blankDict = [String: String]()
 	// Mark: Dictionary Lookups
-let trevisEmail = nameToEmailDict("Trevis")
+let trevisEmail = nameToEmailDict["Trevis"]
 	// Mark: Updating Dictionaries
 nameToEmailDict["Trevis"] = "Ftrevis@amazon.com"
 nameToEmailDict
@@ -82,18 +82,18 @@ for product in shoppingBasket
 	print("Item name is: \(product)")
 }
 print("-------------------")
-var prices = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-let coupounPrice = 10
+prices = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+let couponPrice = 10
 for price in prices
 {
 	print("Price with coupon is: \(price - couponPrice)")
 }
 print(prices)
 print("-------------------")
-for i in 0 ..< price.count
+for i in 0 ..< prices.count
 {
 	let price = prices[i]
-prices(i) -= coupounPrice
+prices[i] -= couponPrice
 }
 print(prices)
 // Section 1.4C: While Loops
@@ -125,9 +125,7 @@ func doubleValue(x: Int)
 doubleValue(x: 7)
 func tripleValue(x: Int, y: Int, z: Int) -> Int
 {
-	return x * 3
-	return y * 3
-	return z * 3
+	return x * 2
 }
 let result = tripleValue(x: 2, y: 4, z: 9)
 print(result)
@@ -150,7 +148,7 @@ var bio: String?
 func getLoginInfo()
 {
 	print("Login: \(login)")
-	print("Bio: \(bio)")
+	print("Bio: \(String(describing: bio))")
 	
 	if let unwrappedBio = bio
 	{
@@ -159,15 +157,15 @@ func getLoginInfo()
 	print("-----------")
 }
 getLoginInfo()
-bio - "The Crimson Blur"
+bio = "The Crimson Blur"
 getLoginInfo()
 //
-var firstName = "John"
-var middleName = String?
-var lastName = "Smith"
+firstName = "John"
+var middleName = String?.self
+lastName = "Smith"
 func getFullName() -> String
 {
-	let middleUnwrapped = middleName ?? ""
+	let middleUnwrapped = middleName
 	return "\(firstName) \(middleUnwrapped) \(lastName)"
 }
 getFullName()
@@ -185,5 +183,5 @@ func sendConfirmation()
 	print("Send text confirmation to number: \(number)")
 }
 sendConfirmation()
-phoneNumber = 555-555-5555
+phoneNumber = "555-555-5555"
 sendConfirmation()
