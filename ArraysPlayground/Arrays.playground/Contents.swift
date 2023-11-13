@@ -161,26 +161,19 @@ func getLoginInfo()
 getLoginInfo()
 bio - "The Crimson Blur"
 getLoginInfo()
-
 //
-
 var firstName = "John"
 var middleName = String?
 var lastName = "Smith"
-
-
 func getFullName() -> String
 {
 	let middleUnwrapped = middleName ?? ""
 	return "\(firstName) \(middleUnwrapped) \(lastName)"
 }
-
 getFullName()
-
 // Mark: Guard Statements
 var email = "test@gmail.com"
 var phoneNumber: String?
-
 func sendConfirmation()
 {
 	print("Did call Function")
@@ -192,6 +185,5 @@ func sendConfirmation()
 	print("Send text confirmation to number: \(number)")
 }
 sendConfirmation()
-
 phoneNumber = 555-555-5555
 sendConfirmation()
