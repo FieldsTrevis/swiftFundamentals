@@ -23,17 +23,27 @@
 
 // MARK: Part 1 Loop
 
-func oddOrEven()
+	// Create a dynamic lower and upper limit
+func printOddOrEven(lowerBound: Int, upperBound: Int)
 {
-	for i in 1...10
+	// Run a For loop that will print out even or odd numbers
+	for i in lowerBound...upperBound
 	{
-		if i % 2 == 0{
-		print("Number is even")
+		if i % 2 == 0 // % is modulus or produce a remainder
+		{
+		print(i)
 	}
 		else
 		{
-			print("Number is odd")
+			if i % 2 != 0 // remainder (!=) not equal to zero
+			{
+				print(i)
+			}
 		}
+		print("---------")
 	}
 }
-oddOrEven()
+printOddOrEven(lowerBound: 0, upperBound: 20)
+printOddOrEven(lowerBound: 10, upperBound: 30)
+printOddOrEven(lowerBound: 0, upperBound: 50)
+printOddOrEven(lowerBound: 0, upperBound: 100)
