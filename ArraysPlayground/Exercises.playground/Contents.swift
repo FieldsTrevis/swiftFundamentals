@@ -38,8 +38,7 @@ func printOddOrEven(lowerBound: Int, upperBound: Int) { 	// Create a dynamic low
 }
 // MARK: Part 2 Arrays
 var nums = [1,2,3,4,5] // Array of numbers
-func combineSum() -> Int
-{
+func combineSum() -> Int {
 	var sum = 0
 	for num in nums
 	{
@@ -49,8 +48,7 @@ func combineSum() -> Int
 	}
 	return sum
 }
-func computeMax() -> Int
-{
+func computeMax() -> Int {
 	var max = 0
 	for num in nums
 	{
@@ -67,8 +65,7 @@ func computeMax() -> Int
 	}
 	return max
 }
-func computeMin() -> Int
-{
+func computeMin() -> Int {
 	var min = Int.max
 	for num in nums
 	{
@@ -83,8 +80,7 @@ func computeMin() -> Int
 	return min
 }
 // MARK: Part 3 Guest List of users
-struct User
-{
+struct User {
 	let firstName: String
 	let lastName: String
 	let usename: String
@@ -103,8 +99,7 @@ struct User
 	var isAdmin: Bool
 	
 }
-struct UserList
-{
+struct UserList {
 	var users: [User]
 	func searchForUser(username: String) -> Bool {
 for user in users {
@@ -148,12 +143,21 @@ return false
 		}
 		return count
 	}
+	func getUsersLessThenLevel(level: Int) -> [User] {
+		var result = [User]()
+		for user in users {
+			if user.level <= level {
+				result.append(user)
+			}
+		}
+		return result
+	}
 	func printReport() {
 		print("Active Users: \(getActiveUsers())")
 		print("Inactive Users: \(getInactiveUsers())")
-		let tier1Associate = getActiveUsers(isUser: 1)
-		let
-		print("Total Users for the site: \(0)")
+		let userLvlUnder3 = getUsersLessThenLevel(level: 3)
+		let totalUsersUnderLvl3 = userLvlUnder3.count
+		print("Total Users for the site: \(totalUsersUnderLvl3)")
 	}
 }
 
@@ -165,13 +169,21 @@ let user4 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge:
 let user5 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 4, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: false, isSuperUser: false, isAdmin: false)
 let user6 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 6, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: true)
 let user7 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 7, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: false, isSuperUser: false, isAdmin: false)
+
 let userList = UserList(users: [user1, user2, user3])
 let manager1 = userList.getUsersManager(manager: "Jeff")
 let manager2 = userList.getUsersManager(manager: "Tom")
+let level1 = userList.getUsersLessThenLevel(level: 1)
+let level3 = userList.getUsersLessThenLevel(level: 3)
 let active = userList.getActiveUsers()
 let notActive = userList.getInactiveUsers()
 
-
+let tierLevel1 = userList.getUsersLessThenLevel(level: 1)
+let tierLevel4 = userList.getUsersLessThenLevel(level: 4)
+let tierLevel5 = userList.getUsersLessThenLevel(level: 5)
+let tierLevel7 = userList.getUsersLessThenLevel(level: 7)
+let tierLevel9 = userList.getUsersLessThenLevel(level: 9)
+let tierLevel3 = userList.getUsersLessThenLevel(level: 3)
 
 // MARK: Calls
 printOddOrEven(lowerBound: 0, upperBound: 20)
@@ -186,3 +198,4 @@ computeMin()
 
 userList.searchForUser(username: "John Smith")
 userList.printReport()
+
