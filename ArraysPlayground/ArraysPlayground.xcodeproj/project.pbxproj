@@ -28,6 +28,7 @@
 		6E64014C2B02FD9900717BFF /* Dictionaries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionaries.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6E64014F2B03548500717BFF /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6E6401512B03555300717BFF /* Functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6E6401542B03565E00717BFF /* Comments.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Comments.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				6E6401302B02909000717BFF /* Arrays.playground */,
+				6E6401542B03565E00717BFF /* Comments.playground */,
 				6E6401482B02F6F900717BFF /* Constants.playground */,
 				6E64014C2B02FD9900717BFF /* Dictionaries.playground */,
 				6E6401512B03555300717BFF /* Functions.playground */,
