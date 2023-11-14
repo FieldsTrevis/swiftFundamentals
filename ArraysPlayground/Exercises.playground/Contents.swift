@@ -137,16 +137,39 @@ struct UserList
 	func searchForUser(username: String) -> Bool
 	{
 		for user in users {
-			if username == user.usename
+			print("Searching. . .")
+			if username.lowercased() == user.usename.lowercased()
 			{
+				print("User has signed up!")
 				return true
 			}
 		}
+		print("Please Sign up to begin using the App today!")
 		return false
 	}
+	
+	func getUsersManager (manager: String) -> [User]
+	{
+		var results = [User]()
+		for user in users
+		{
+			if user.manager <= manager
+			{
+				results.append(user)
+			}
+		}
+		return results
+	}
+	
 }
 let user1 = User(firstName: "John", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: "T1", manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: false, isAdmin: false)
-let user2 = User(firstName: "Joe", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: "T1", manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: false)
+let user2 = User(firstName: "Joe", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: "T1", manager: "Tom", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: false)
 let user3 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: "T1", manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: true)
 
 let userList = UserList(users: [user1, user2, user3])
+
+
+userList.searchForUser(username: "John Smith")
+let manager1 = userList.getUsersManager(manager: "Jeff")
+let manager2 = userList.getUsersManager(manager: "Tom")
+
