@@ -1,6 +1,6 @@
 import UIKit
 
-// Section 1.3: Dictionaries
+// MARK: Dictionaries
 	/*
 	- All Keys need to be unique for their value
 	- Syntax to create a Dictonary:

@@ -32,7 +32,7 @@ struct Vehicle
 }
 let v1 = Vehicle(make: "Subaru", model: "WRX", year: 2015)
 v1.getVehicleInfo()
-// MARK: Examples of Structs
+// Examples of Structs
 struct EmployeeProfile {
 	let userName: String // Calls for String input from the user to enter their Username
 	let firstName: String // Calls for a String input from the user to enter their First name
@@ -87,79 +87,3 @@ struct EngagementCalander {
 	var engagementIdeas: String // Allows the user to enter engagement ideas
 }
 
-// MARK: Functions
-	// Functions are self contained blocks of code that perform a specific task
-func greeting()
-{
-	print("Hello, World!")
-}
-greeting()
-func doubleValue(x: Int)
-{
-	print(x * 2)
-}
-doubleValue(x: 7)
-func tripleValue(x: Int, y: Int, z: Int) -> Int
-{
-	return x * 2
-}
-let result = tripleValue(x: 2, y: 4, z: 9)
-print(result)
-func getAge(yearOfBirth: Int) -> Int
-{
-	let currentYear = 2023
-	let age = currentYear - yearOfBirth
-	return age
-}
-func displayAge(birthYear: Int)
-{
-	let age = getAge(yearOfBirth: birthYear)
-	let age1 = getAge(yearOfBirth: birthYear)
-	print("You are \(age) year(s) old")
-	print("You are \(age1) year(s) old")
-}
-displayAge(birthYear: 1992)
-displayAge(birthYear: 1986)
-// Section 1.6 Optionals
-var login = "Flash"
-var bio: String?
-func getLoginInfo()
-{
-	print("Login: \(login)")
-	print("Bio: \(String(describing: bio))")
-	
-	if let unwrappedBio = bio
-	{
-		print("User bio unwrapped is: \(unwrappedBio)")
-	}
-	print("-----------")
-}
-getLoginInfo()
-bio = "The Crimson Blur"
-getLoginInfo()
-//
-firstName = "John"
-var middleName = String?.self
-lastName = "Smith"
-func getFullName() -> String
-{
-	let middleUnwrapped = middleName
-	return "\(firstName) \(middleUnwrapped) \(lastName)"
-}
-getFullName()
-// Mark: Guard Statements
-var email = "test@gmail.com"
-var phoneNumber: String?
-func sendConfirmation()
-{
-	print("Did call Function")
-	guard let number = phoneNumber
-	else
-	{ print("Send email confirmation to: \(email)")
-		return
-	}
-	print("Send text confirmation to number: \(number)")
-}
-sendConfirmation()
-phoneNumber = "555-555-5555"
-sendConfirmation()

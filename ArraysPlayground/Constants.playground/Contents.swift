@@ -1,6 +1,6 @@
 import UIKit
 
-// Section 1.0: Constants
+// MARK: Constants
 	// Decalring Constants
 	// - Constants are values we dont want the user to change or can not be modified*
 	// - Some Examples are Years, Months, Days, Names*, Locations, and a few other things you may come up with within your own applications or along the way if you are devloping for a company.
