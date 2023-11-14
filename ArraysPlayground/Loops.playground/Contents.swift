@@ -31,7 +31,6 @@ for product in shoppingBasket
 }
 print("-------------------")
 
-
 // Section 1.4B: While Loops
 	// A while loop is conditon based, meaning it continues as long as the condition is met
 	// For the loop to stop the condition must fail

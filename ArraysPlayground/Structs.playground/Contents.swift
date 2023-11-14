@@ -17,7 +17,6 @@ struct Vehicle
 }
 let v1 = Vehicle(make: "Subaru", model: "WRX", year: 2015)
 v1.getVehicleInfo()
-
 // Example 2
 struct AmazonUser {
 	let userName: String // Calls for String input from the user to enter their Username
@@ -56,7 +55,6 @@ user3.displayUserName()
 // Add additonal people to the array of Amazon Users
 var users = [AmazonUser]()
 users.append(user1)
-
 // Example 3
 struct SwagStore {
 	let skuItem: Int // An inventory or Shop Keeps Unit identifier to allow for easy location of an item or order of item
@@ -111,4 +109,26 @@ let engagement0 = EngagementCalander(currentYear: 2023, currentMonth: 11, curren
 let engagement1 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 16, year: 2023, month: 11, day: 16, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
 let engagement2 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 17, year: 2023, month: 11, day: 17, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
 let engagement3 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 18, year: 2023, month: 11, day: 18, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
+// Example 7
+struct Console {
+	let company: String
+	let console: String
+	let year: Int
+}
+let gamer1 = Console(company: "Sony", console: "PS5", year: 2023)
+let gamer2 = Console(company: "Microsoft", console: "XBOX Series X", year: 2023)
+let gamer3 = Console(company: "Nintendo", console: "Switch - OLED", year: 2023)
+
+print("Rencently added to the Swag store: \(gamer1.company) \(gamer1.console)")
+print("Rencently added to the Swag store: \(gamer2.company) \(gamer2.console)")
+print("Rencently added to the Swag store: \(gamer3.company) \(gamer3.console)")
+print("The \(gamer1.console) is a \(gamer1.year) model!")
+print("The \(gamer2.console) is a \(gamer2.year) model!")
+print("The \(gamer3.console) is a \(gamer3.year) model!")
+
+var consoles = [Console]()
+consoles.append(gamer1)
+consoles.append(gamer2)
+consoles.append(gamer3)
+
 

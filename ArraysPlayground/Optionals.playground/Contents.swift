@@ -62,6 +62,14 @@ func sendConfirmation()
 		return
 	}
 	print("Send text confirmation to: \(number)")
+	if let phoneNumber = phoneNumber
+	{
+		// Send Text
+	}
+	else
+	{
+		// Send Email
+	}
 }
 
 sendConfirmation() // Nothing is going to happen at this time
