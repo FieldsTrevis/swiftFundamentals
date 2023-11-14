@@ -17,7 +17,7 @@ struct Vehicle
 }
 let v1 = Vehicle(make: "Subaru", model: "WRX", year: 2015)
 v1.getVehicleInfo()
-// Example 2
+// MARK: Example 2
 struct AmazonUser {
 	let userName: String // Calls for String input from the user to enter their Username
 	let firstName: String // Calls for a String input from the user to enter their First name
@@ -55,7 +55,7 @@ user3.displayUserName()
 // Add additonal people to the array of Amazon Users
 var users = [AmazonUser]()
 users.append(user1)
-// Example 3
+// MARK: Example 3
 struct SwagStore {
 	let skuItem: Int // An inventory or Shop Keeps Unit identifier to allow for easy location of an item or order of item
 	let itemName: String // Items display name to the user so they know what they are getting from the store
@@ -78,7 +78,7 @@ print("You bought a: ",swag1.itemName, "for $", swag1.swagPrice, " swag bucks")
 print("You bought a: ",swag2.itemName, "for $", swag2.swagPrice, " swag bucks")
 print("You bought a: ",swag3.itemName, "for $", swag3.swagPrice, " swag bucks")
 print("You bought a: ",swag4.itemName, "for $", swag4.swagPrice, " swag bucks")
-// Example 5
+// MARK: Example 4
 struct AccountBalance {
 	let defaultBalance: Double // The Default Balance for every user when they begin will be 0
 	let newUserBalance: Double // Set all New users balnces to the Default balance
@@ -93,7 +93,7 @@ let user10 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0
 let user11 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
 let user12 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
 let user13 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
-// Example 6
+// MARK: Example 5
 struct EngagementCalander {
 	let currentYear: Int // Sets the year to Current year
 	let currentMonth: Int // Sets to current Month
@@ -109,7 +109,7 @@ let engagement0 = EngagementCalander(currentYear: 2023, currentMonth: 11, curren
 let engagement1 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 16, year: 2023, month: 11, day: 16, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
 let engagement2 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 17, year: 2023, month: 11, day: 17, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
 let engagement3 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 18, year: 2023, month: 11, day: 18, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
-// Example 7
+// MARK: Example 6
 struct Console {
 	let company: String
 	let console: String

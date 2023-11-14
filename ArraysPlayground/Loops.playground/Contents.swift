@@ -1,4 +1,3 @@
-import UIKit
 // MARK: Loops
 	// An instruction that continues to repeat until we want it to stop
 	// We use loops to perform tasks repeatedly, more efficiently

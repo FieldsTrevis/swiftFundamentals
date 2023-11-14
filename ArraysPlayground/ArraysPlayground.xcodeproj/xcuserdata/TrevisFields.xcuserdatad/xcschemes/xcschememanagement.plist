@@ -25,6 +25,27 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Boolean (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>Boolean (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>Boolean (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>Comments (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
