@@ -70,6 +70,7 @@ struct SwagStore {
 		print("would like to purchase a swag item.")
 	}
 }
+// Note that as the data gets longer auto - fill will no longer complete some of the fields until you begin typing in, in this way it is good practice to remember all of your different types for the parameters you are setting for the piece of code
 let swag1 = SwagStore(skuItem: 000001, itemName: "Sweater", itemPrice: 25.75, swagPrice: 120, swagTier: 3, itemQuanity: 15)
 let swag2 = SwagStore(skuItem: 000002, itemName: "Sweat Pants", itemPrice: 25.75, swagPrice: 120, swagTier: 3, itemQuanity: 15)
 let swag3 = SwagStore(skuItem: 000003, itemName: "PS5 Slime", itemPrice: 500, swagPrice: 1200, swagTier: 1, itemQuanity: 2)
@@ -87,7 +88,13 @@ struct AccountBalance {
 	let updateBalance: Double // Allows Admin to deposit balance funds into users account
 	var newBalance: Double // Sets user balance to New Balance and reapplys the User balance to reflect
 }
-
+let user7 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
+let user8 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
+let user9 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
+let user10 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
+let user11 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
+let user12 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
+let user13 = AccountBalance(defaultBalance: 0, newUserBalance: 0, userBalance: 0, updateBalance: 0, newBalance: 0)
 // Example 6
 struct EngagementCalander {
 	let currentYear: Int // Sets the year to Current year
@@ -99,4 +106,9 @@ struct EngagementCalander {
 	var swagRequest: String // Allows the user to enter in Swag requests
 	var engagementIdeas: String // Allows the user to enter engagement ideas
 }
+// Declare Engagements by Hard Coding them
+let engagement0 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 15, year: 2023, month: 11, day: 15, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
+let engagement1 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 16, year: 2023, month: 11, day: 16, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
+let engagement2 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 17, year: 2023, month: 11, day: 17, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
+let engagement3 = EngagementCalander(currentYear: 2023, currentMonth: 11, currentDay: 18, year: 2023, month: 11, day: 18, swagRequest: "Tye Dye Sweaters", engagementIdeas: "Pie the leader Day")
 
