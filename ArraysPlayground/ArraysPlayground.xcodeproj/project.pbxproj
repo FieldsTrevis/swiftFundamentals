@@ -23,6 +23,9 @@
 		6E64013E2B02DB7000717BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E6401412B02DB7100717BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E6401432B02DB7100717BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E6401482B02F6F900717BFF /* Constants.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Constants.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6E64014A2B02FABD00717BFF /* Variables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Variables.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6E64014C2B02FD9900717BFF /* Dictionaries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionaries.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,9 @@
 		6E6401292B02905000717BFF = {
 			isa = PBXGroup;
 			children = (
+				6E64014C2B02FD9900717BFF /* Dictionaries.playground */,
+				6E64014A2B02FABD00717BFF /* Variables.playground */,
+				6E6401482B02F6F900717BFF /* Constants.playground */,
 				6E6401322B02BCDB00717BFF /* Structs.playground */,
 				6E6401312B02A33600717BFF /* Loops.playground */,
 				6E6401302B02909000717BFF /* Arrays.playground */,
