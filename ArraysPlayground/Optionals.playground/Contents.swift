@@ -55,10 +55,15 @@ var phoneNumber: String?
 
 func sendConfirmation()
 {
+	print("Test of function call: ")
 	guard let number = phoneNumber
 		else
-			{ return }
+			{ print("Send email confirmation to \(email)")
+		return
+	}
 	print("Send text confirmation to: \(number)")
 }
 
 sendConfirmation() // Nothing is going to happen at this time
+phoneNumber = "555-555-5555"
+sendConfirmation()
