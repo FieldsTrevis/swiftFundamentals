@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		6E6401302B02909000717BFF /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6E6401312B02A33600717BFF /* Loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Loops.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		6E6401322B02BCDB00717BFF /* Structs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Structs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6E6401322B02BCDB00717BFF /* StructsAndFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StructsAndFunctions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6E6401372B02DB1A00717BFF /* Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E64013A2B02DB1B00717BFF /* ExercisesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesApp.swift; sourceTree = "<group>"; };
 		6E64013C2B02DB1B00717BFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 				6E64014C2B02FD9900717BFF /* Dictionaries.playground */,
 				6E64014A2B02FABD00717BFF /* Variables.playground */,
 				6E6401482B02F6F900717BFF /* Constants.playground */,
-				6E6401322B02BCDB00717BFF /* Structs.playground */,
+				6E6401322B02BCDB00717BFF /* StructsAndFunctions.playground */,
 				6E6401312B02A33600717BFF /* Loops.playground */,
 				6E6401302B02909000717BFF /* Arrays.playground */,
 				6E6401392B02DB1B00717BFF /* Exercises */,

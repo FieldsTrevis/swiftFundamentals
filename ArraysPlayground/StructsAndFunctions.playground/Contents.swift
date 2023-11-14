@@ -1,8 +1,9 @@
-// Section 1.6 Structures
-	// A Struct is a template definition of properties and functions that define a programmatic repeesentation of an object
-	// This could be a user, a video game character, a product, a vehicle, etc
-
 import UIKit
+// MARK: Structures
+	/*
+- A Struct is a template definition of properties and functions that define a programmatic repeesentation of an object
+- This could be a user, a video game character, a product, a vehicle, etc
+*/
 struct AmazonUser
 {
 	let userName: String
@@ -85,3 +86,80 @@ struct EngagementCalander {
 	var swagRequest: String // Allows the user to enter in Swag requests
 	var engagementIdeas: String // Allows the user to enter engagement ideas
 }
+
+// MARK: Functions
+	// Functions are self contained blocks of code that perform a specific task
+func greeting()
+{
+	print("Hello, World!")
+}
+greeting()
+func doubleValue(x: Int)
+{
+	print(x * 2)
+}
+doubleValue(x: 7)
+func tripleValue(x: Int, y: Int, z: Int) -> Int
+{
+	return x * 2
+}
+let result = tripleValue(x: 2, y: 4, z: 9)
+print(result)
+func getAge(yearOfBirth: Int) -> Int
+{
+	let currentYear = 2023
+	let age = currentYear - yearOfBirth
+	return age
+}
+func displayAge(birthYear: Int)
+{
+	let age = getAge(yearOfBirth: birthYear)
+	let age1 = getAge(yearOfBirth: birthYear)
+	print("You are \(age) year(s) old")
+	print("You are \(age1) year(s) old")
+}
+displayAge(birthYear: 1992)
+displayAge(birthYear: 1986)
+// Section 1.6 Optionals
+var login = "Flash"
+var bio: String?
+func getLoginInfo()
+{
+	print("Login: \(login)")
+	print("Bio: \(String(describing: bio))")
+	
+	if let unwrappedBio = bio
+	{
+		print("User bio unwrapped is: \(unwrappedBio)")
+	}
+	print("-----------")
+}
+getLoginInfo()
+bio = "The Crimson Blur"
+getLoginInfo()
+//
+firstName = "John"
+var middleName = String?.self
+lastName = "Smith"
+func getFullName() -> String
+{
+	let middleUnwrapped = middleName
+	return "\(firstName) \(middleUnwrapped) \(lastName)"
+}
+getFullName()
+// Mark: Guard Statements
+var email = "test@gmail.com"
+var phoneNumber: String?
+func sendConfirmation()
+{
+	print("Did call Function")
+	guard let number = phoneNumber
+	else
+	{ print("Send email confirmation to: \(email)")
+		return
+	}
+	print("Send text confirmation to number: \(number)")
+}
+sendConfirmation()
+phoneNumber = "555-555-5555"
+sendConfirmation()
