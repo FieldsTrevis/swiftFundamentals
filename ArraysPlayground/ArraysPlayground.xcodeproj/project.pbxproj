@@ -18,12 +18,14 @@
 		6E6401542B03565E00717BFF /* Comments.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Comments.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6E6401582B037A5400717BFF /* Exercises.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exercises.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6E64015A2B037F8300717BFF /* Boolean.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Boolean.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6E64015D2B04588500717BFF /* APIDocs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = APIDocs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		6E6401292B02905000717BFF = {
 			isa = PBXGroup;
 			children = (
+				6E64015D2B04588500717BFF /* APIDocs.playground */,
 				6E6401302B02909000717BFF /* Arrays.playground */,
 				6E64015A2B037F8300717BFF /* Boolean.playground */,
 				6E6401542B03565E00717BFF /* Comments.playground */,

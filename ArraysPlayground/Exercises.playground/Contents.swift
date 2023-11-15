@@ -1,5 +1,4 @@
 /*
-
 	Exercises
 
 
@@ -209,13 +208,13 @@ struct ShoppingCart {
 }
 
 // MARK: Declartions
-let user1 = User(firstName: "John", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 1, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: false, isAdmin: false)
-let user2 = User(firstName: "Joe", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 3, manager: "Tom", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: false)
-let user3 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 1, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: true)
-let user4 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 5, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: true)
-let user5 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 4, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: false, isSuperUser: false, isAdmin: false)
-let user6 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 6, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: true)
-let user7 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 7, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: false, isSuperUser: false, isAdmin: false)
+let user1 = User(firstName: "John", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", 	level: 1, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: false, 	isAdmin: false)
+let user2 = User(firstName: "Joe", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", 	level: 3, manager: "Tom", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, isAdmin: 	false)
+let user3 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", 	level: 1, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, 	isAdmin: true)
+let user4 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", 	level: 5, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, 	isAdmin: true)
+let user5 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", 	level: 4, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: false, isSuperUser: false, 	isAdmin: false)
+let user6 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", 	level: 6, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: true, 	isAdmin: true)
+let user7 = User(firstName: "Jack", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", 	level: 7, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: false, isSuperUser: false, 	isAdmin: false)
 
 let userList = UserList(users: [user1, user2, user3])
 let manager1 = userList.getUsersManager(manager: "Jeff")
