@@ -184,6 +184,7 @@ struct ShoppingCart {
 			
 			if item.name == merchandise.name && item.swagPrice == merchandise.swagPrice {
 				self.swag.remove(at: i)
+				return
 			}
 		}
 	}
@@ -196,7 +197,14 @@ struct ShoppingCart {
 		return result
 	}
 	func showReceipt() {
-		print("Total Swag bucks spent today \(getTotal())")
+		
+		for i in 0 ..< swag.count {
+			let merchandise = swag[i]
+			print("Swag Item \(i + 1): \(merchandise.name) --- $\(merchandise.swagPrice)")
+		}
+		print("Total")
+		print("_-_-_-_-_-_-_-_-_-_-_-")
+		print("Swag $\(getTotal()) spent today")
 	}
 }
 
@@ -253,3 +261,6 @@ userList.printReport()
 aa3.applyFS(amount: 65)
 cart.addItem(merchandise: aa3)
 cart.showReceipt()
+cart.removeItem(merchandise: aa3)
+cart.showReceipt()
+
