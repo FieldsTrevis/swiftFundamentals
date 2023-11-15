@@ -160,6 +160,45 @@ return false
 		print("Total Users for the site: \(totalUsersUnderLvl3)")
 	}
 }
+// MARK: Part 4 Shopping Cart
+struct Merchandise {
+	let name: String
+	var swagPrice: Double
+	
+	mutating func applyFS(amount: Double) {
+		self.swagPrice -= amount
+	}
+	mutating func applyAOM(percent: Double) {
+		swagPrice *= (1 - percent)
+	}
+}
+struct ShoppingCart {
+	var swag: [Merchandise]
+	
+	mutating func addItem(merchandise: Merchandise) {
+		swag.append(merchandise)
+	}
+	mutating func removeItem(merchandise: Merchandise) {
+		for i in 0 ..< swag.count {
+			let item = swag[i]
+			
+			if item.name == merchandise.name && item.swagPrice == merchandise.swagPrice {
+				self.swag.remove(at: i)
+			}
+		}
+	}
+	func getTotal() -> Double {
+		var result = 0.0
+		
+		for item in swag {
+			result += item.swagPrice
+		}
+		return result
+	}
+	func showReceipt() {
+		print("Total Swag bucks spent today \(getTotal())")
+	}
+}
 
 // MARK: Declartions
 let user1 = User(firstName: "John", lastName: "Smith", usename: "Jsmith", badge: "1234567", employeeID: "909912134", level: 1, manager: "Jeff", shiftCode: "NNNNTTTT", stationCode: "XXX#", isUser: true, isSuperUser: false, isAdmin: false)
@@ -185,6 +224,17 @@ let tierLevel7 = userList.getUsersLessThenLevel(level: 7)
 let tierLevel9 = userList.getUsersLessThenLevel(level: 9)
 let tierLevel3 = userList.getUsersLessThenLevel(level: 3)
 
+var aa1 = Merchandise(name: "Sweater", swagPrice: 305)
+var aa2 = Merchandise(name: "Sweater", swagPrice: 120)
+var aa3 = Merchandise(name: "Sweater", swagPrice: 95)
+var aa4 = Merchandise(name: "Sweater", swagPrice: 600)
+
+
+var cart = ShoppingCart(swag: [aa1, aa2, aa3, aa4])
+
+var aa5 = Merchandise(name: "Sweater", swagPrice: 15)
+
+
 // MARK: Calls
 printOddOrEven(lowerBound: 0, upperBound: 20)
 printOddOrEven(lowerBound: 10, upperBound: 30)
@@ -199,3 +249,7 @@ computeMin()
 userList.searchForUser(username: "John Smith")
 userList.printReport()
 
+
+aa3.applyFS(amount: 65)
+cart.addItem(merchandise: aa3)
+cart.showReceipt()
