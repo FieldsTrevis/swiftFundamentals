@@ -95,8 +95,8 @@ struct User {
 	var stationCode: String
 	
 	var isUser: Bool
-	var isSuperUser: Bool
-	var isAdmin: Bool
+	var isSuperUser: Bool // Move to SuperUser struct
+	var isAdmin: Bool // Move to Admin struct
 	
 }
 struct UserList {
