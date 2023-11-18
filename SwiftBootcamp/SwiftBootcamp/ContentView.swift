@@ -11,45 +11,148 @@ struct ContentView: View {
 	@State var rectangleColor = Color.clear
     var body: some View {
 			
-			HStack {
-		 		Button { rectangleColor = .blue}
+		
+//			List {
+//		 		Text("Item1")
+//				Text("Item1")
+//				Text("Item1")
+//				Text("Item1")
+//				Text("Item1")
+//			}
+	Text("Welcome to the Swag Store")
+		.font(.largeTitle)
+		Spacer()
+			Divider()
+			List {
+		 
+				
+				HStack {
+				Text("Item 1")
+					Spacer()
+					Button { rectangleColor = .green}
+						label: {
+						Image(systemName:"paperplane")
+							.imageScale(.large)
+							.frame(width: 60, height: 35, alignment: .center)
+							.background(Color.green)
+							.foregroundColor(.white)
+							.cornerRadius(10)
+							
+	}
+					
+			}
+				HStack {
+				Text("Item 1")
+					Spacer()
+					Button { rectangleColor = .green}
+						label: {
+						Image(systemName:"paperplane")
+							.imageScale(.large)
+							.frame(width: 60, height: 35, alignment: .center)
+							.background(Color.green)
+							.foregroundColor(.white)
+							.cornerRadius(10)
+							
+	}
+					
+			}
+				HStack {
+				Text("Item 1")
+					Spacer()
+					Button { rectangleColor = .green}
+						label: {
+						Image(systemName:"paperplane")
+							.imageScale(.large)
+							.frame(width: 60, height: 35, alignment: .center)
+							.background(Color.green)
+							.foregroundColor(.white)
+							.cornerRadius(10)
+							
+	}
+					
+			}
+				HStack {
+				Text("Item 1")
+					Spacer()
+					Button { rectangleColor = .green}
+						label: {
+						Image(systemName:"paperplane")
+							.imageScale(.large)
+							.frame(width: 60, height: 35, alignment: .center)
+							.background(Color.green)
+							.foregroundColor(.white)
+							.cornerRadius(10)
+							
+	}
+					
+			}
+				HStack {
+				Text("Item 1")
+					Spacer()
+					Button { rectangleColor = .green}
+						label: {
+						Image(systemName:"paperplane")
+							.imageScale(.large)
+							.frame(width: 60, height: 35, alignment: .center)
+							.background(Color.green)
+							.foregroundColor(.white)
+							.cornerRadius(10)
+							
+	}
+					
+			}
+				
+				
+			
+			}
+			Spacer()
+			Divider()
+			HStack(spacing: 35) {
+				
+				Button { rectangleColor = .green}
 					label: {
-					Image(systemName:"folder.fill")
-					.imageScale(.large)
-					.frame(width: 60, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-					.background(Color.blue)
-					.foregroundColor(.white)
-					.cornerRadius(10)
+					Image(systemName:"filemenu.and.selection")
+						.imageScale(.large)
+						.frame(width: 60, height: 35, alignment: .center)
+						.background(Color.green)
+						.foregroundColor(.white)
+						.cornerRadius(10)
 }
+					.shadow(color: .yellow, radius: 5)
 		 		Button { rectangleColor = .orange}
 					label: {
-					Image(systemName:"folder.fill")
+					Image(systemName:"person.fill.viewfinder")
 					.imageScale(.large)
-					.frame(width: 60, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 					.background(Color.orange)
 					.foregroundColor(.white)
 					.cornerRadius(10)
 }
+					.shadow(color: .yellow, radius: 5)
 		 		Button { rectangleColor = .red}
 					label: {
-					Image(systemName:"folder.fill")
+					Image(systemName:"terminal")
 					.imageScale(.large)
-					.frame(width: 60, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-					.background(Color.red)
+					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+					.background(Color.blue)
 					.foregroundColor(.white)
 					.cornerRadius(10)
 }
+					.shadow(color: .yellow, radius: 5)
 		 		Button { rectangleColor = .purple}
 					label: {
-					Image(systemName:"folder.fill")
+					Image(systemName:"doc.plaintext")
 					.imageScale(.large)
-					.frame(width: 60, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 					.background(Color.purple)
 					.foregroundColor(.white)
 					.cornerRadius(10)
 							 }
+					.shadow(color: .yellow, radius: 5)
+				
 		 }
 			
+			.padding()
 //			VStack {
 //				Rectangle()
 //					.frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
