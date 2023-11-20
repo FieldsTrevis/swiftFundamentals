@@ -10,14 +10,14 @@ import SwiftUI
 struct ContentView: View {
 	@State var rectangleColor = Color.clear
 	/* --------------------- */
-	let tops = ["Sweater", "Hoodie", "Bomber", "Windbreaker", "T-shirt", "Longsleeve","Parka"]
+	@State var tops = ["Sweater", "Hoodie", "Bomber", "Windbreaker", "T-shirt", "Longsleeve","Parka"]
 	/* --------------------- */
-	let bottoms = ["Jeans","Sweatpants","Shorts","Skirts"]
+	@State var bottoms = ["Jeans","Sweatpants","Shorts","Skirts"]
 	/* --------------------- */
     var body: some View
 		{
 			/* --------------------- */
-	Text("DAX8 Engamgement Calendar")
+	Text("XXX# Engamgement Store")
 		.font(.title)
 				Text("Welcome!")// Text("Welcome \(displayUsername) to \(siteCode) Engagement Calendar
 				 .font(.subheadline)
@@ -115,13 +115,15 @@ struct ContentView: View {
 //					}
 //			}
 //			}
-			
-				List
+			/* --------------------- */
+				 List
 							{
-							Section()
+							Section
 								{
 							ForEach(tops,id: \.self) {top in
 									Text(top)
+							}
+							.onDelete { indices in tops.remove(atOffsets: indices)
 							}
 						}
 							Section
@@ -129,9 +131,11 @@ struct ContentView: View {
 								ForEach(bottoms,id: \.self) {bottom in
 										Text(bottom)
 								}
+								.onDelete { indices in bottoms.remove(atOffsets: indices)
+								}
 			}
 						}
-			Spacer()
+			  Spacer()
 			/* --------------------- */
 			HStack(spacing: 35)
 			{
@@ -149,7 +153,7 @@ struct ContentView: View {
 		 		Button { }
 					label:
 								 {
-									 Image(systemName:"person.fill.viewfinder")
+									 Image(systemName:"cart.fill")
 									 .imageScale(.large)
 									 .frame(width: 60, height: 35, alignment: .center)
 									 .background(Color.orange)
@@ -160,7 +164,7 @@ struct ContentView: View {
 		 		Button { }
 					label:
 					{
-					Image(systemName:"terminal")
+					Image(systemName:"doc.plaintext.fill")
 					.imageScale(.large)
 					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 					.background(Color.blue)
@@ -171,7 +175,7 @@ struct ContentView: View {
 		 		Button { }
 					label:
 					{
-					Image(systemName:"doc.plaintext")
+					Image(systemName:"camera.rotate.fill")
 					.imageScale(.large)
 					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 					.background(Color.purple)
@@ -182,14 +186,6 @@ struct ContentView: View {
 
 			.padding()
 			
-////			 VStack {
-////				Rectangle()
-////					.frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-////					.cornerRadius(15)
-////					.foregroundColor(rectangleColor)
-////				Button("Good Morning!") {
-////		 rectangleColor = .red
-////					}
 ////
 ////				Divider()
 ////

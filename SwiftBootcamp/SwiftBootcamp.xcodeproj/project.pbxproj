@@ -52,8 +52,8 @@
 		6E6401692B0481F200717BFF /* SwiftBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				6EA20AF72B0AE21800676BD0 /* Views */,
 				6E64016A2B0481F200717BFF /* SwiftBootcampApp.swift */,
-				6E64016C2B0481F200717BFF /* ContentView.swift */,
 				6E64016E2B04824500717BFF /* Assets.xcassets */,
 				6E6401732B04824500717BFF /* Info.plist */,
 				6E6401702B04824500717BFF /* Preview Content */,
@@ -67,6 +67,14 @@
 				6E6401712B04824500717BFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6EA20AF72B0AE21800676BD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E64016C2B0481F200717BFF /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
