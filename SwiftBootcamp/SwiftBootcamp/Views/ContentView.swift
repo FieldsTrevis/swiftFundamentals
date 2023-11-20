@@ -44,14 +44,27 @@ struct ContentView: View {
 		 Divider()
 			// MARK: Scroll View of up comming engagements
 			ScrollView(.horizontal, showsIndicators: false) {
-						HStack
-									 {
-										 Image(systemName: "person.fill")
-											.resizable()
-											.background(Color.blue)
+				ZStack(alignment: .bottomTrailing) {
+					HStack
+					{
+													Image(systemName: "person.fill")
+													 .resizable()
+													 .background(Color.clear)
+													 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+													 .frame(width: 32, height: 32)
+					}
+					Button { }
+							 label:
+										{
+										Image(systemName:"star.fill")
+										.imageScale(.small)
+											.frame(width: 20, height: 20, alignment: .center)
 											.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-											.frame(width: 64, height: 64)
-										} // HStack of Engagement info / stories
+										.background(Color.clear)
+										.foregroundColor(.blue)
+										.cornerRadius(10)
+										} // Button that adds swag items to the shopping cart
+				} // HStack of Engagement info / stories
 											.padding()
 					} // Horizontal Scroll view that contains HStacks of Engagement info
 			Spacer()
@@ -371,7 +384,7 @@ struct ContentView: View {
 					VStack(alignment: .leading) { Image(systemName: "person.fill")
 					.resizable()
 							 .foregroundColor(Color.blue)
-							 .frame(width: 48, height: 48)
+							 .frame(width: 16, height: 16)
 					.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
 					Text("Username")
 							 .font(.caption)
@@ -404,11 +417,11 @@ struct ContentView: View {
 					} // Contains the User info stack and adds to cart and wishlist buttons
 // MARK:
 					HStack {
-					VStack(alignment: .leading) { Image(systemName: "swift")
+					VStack(alignment: .leading) { Image(systemName: "person.fill")
 					.resizable()
 							 .foregroundColor(Color.blue)
-					.background(Color.black)
-							 .frame(width: 32, height: 32)
+							 .frame(width: 16, height: 16)
+						.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
 					Text("Username")
 							 .font(.caption)
 					Text("Location")
@@ -440,11 +453,11 @@ struct ContentView: View {
 					} // Contains the User info stack and adds to cart and wishlist buttons
 // MARK:
 					HStack {
-					VStack(alignment: .leading) { Image(systemName: "swift")
+					VStack(alignment: .leading) { Image(systemName: "person.fill")
 					.resizable()
 							 .foregroundColor(Color.blue)
-					.background(Color.black)
-							 .frame(width: 32, height: 32)
+							 .frame(width: 16, height: 16)
+						.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
 					Text("Username")
 							 .font(.caption)
 					Text("Location")
@@ -476,11 +489,11 @@ struct ContentView: View {
 					} // Contains the User info stack and adds to cart and wishlist buttons
 // MARK:
 					HStack {
-					VStack(alignment: .leading) { Image(systemName: "swift")
+					VStack(alignment: .leading) { Image(systemName: "person.fill")
 					.resizable()
 							 .foregroundColor(Color.blue)
-					.background(Color.black)
-							 .frame(width: 32, height: 32)
+							 .frame(width: 16, height: 16)
+						.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
 					Text("Username")
 							 .font(.caption)
 					Text("Location")
