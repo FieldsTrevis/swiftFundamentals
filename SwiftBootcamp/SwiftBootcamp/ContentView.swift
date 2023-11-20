@@ -9,133 +9,168 @@ import SwiftUI
 
 struct ContentView: View {
 	@State var rectangleColor = Color.clear
-    var body: some View {
-			
-		
-//			List {
-//		 		Text("Item1")
-//				Text("Item1")
-//				Text("Item1")
-//				Text("Item1")
-//				Text("Item1")
-//			}
+	/* --------------------- */
+	let tops = ["Sweater", "Hoodie", "Bomber", "Windbreaker", "T-shirt", "Longsleeve","Parka"]
+	/* --------------------- */
+	let bottoms = ["Jeans","Sweatpants","Shorts","Skirts"]
+	/* --------------------- */
+    var body: some View
+		{
+			/* --------------------- */
 	Text("DAX8 Engamgement Calendar")
 		.font(.title)
 				Text("Welcome!")// Text("Welcome \(displayUsername) to \(siteCode) Engagement Calendar
 				 .font(.subheadline)
 			 Spacer()
 			Divider()
-			List {
+			/* --------------------- */
 			
-					HStack {
-		 Text("Item 1")
-					Spacer()
-					Button { rectangleColor = .pink}
-					label: {
-					Image(systemName:"paperplane")
-							 .imageScale(.large)
-							 .frame(width: 60, height: 35, alignment: .center)
-							 .background(Color.pink)
-							 .foregroundColor(.white)
-							 .cornerRadius(10)
-							 
-}
-		 }
-					 HStack {
-					 Text("Item 2")
-						 Spacer()
-						 Button { rectangleColor = .yellow}
-							 label: {
-							 Image(systemName:"xmark.bin")
-								 .imageScale(.large)
-								 .frame(width: 60, height: 35, alignment: .center)
-								 .background(Color.yellow)
-								 .foregroundColor(.white)
-								 .cornerRadius(10)
-								 
-		 }
-					}
-					 HStack {
-					 Text("Item 3")
-						 Spacer()
-						 Button { rectangleColor = .black}
-							 label: {
-							 Image(systemName:"figure.stand")
-								 .imageScale(.large)
-								 .frame(width: 60, height: 35, alignment: .center)
-								 .background(Color.black)
-								 .foregroundColor(.white)
-								 .cornerRadius(10)
+//			List
+//			{
+//				Section
+//				{
+//					HStack {
+//		 Text("Item 1")
+//					Spacer()
+//					Button { rectangleColor = .pink}
+//					label: {
+//					Image(systemName:"paperplane")
+//							 .imageScale(.large)
+//							 .frame(width: 60, height: 35, alignment: .center)
+//							 .background(Color.pink)
+//							 .foregroundColor(.white)
+//							 .cornerRadius(10)
+//
+//}
+//		 }
+//					 HStack {
+//					 Text("Item 2")
+//						 Spacer()
+//						 Button { rectangleColor = .yellow}
+//							 label: {
+//							 Image(systemName:"xmark.bin")
+//								 .imageScale(.large)
+//								 .frame(width: 60, height: 35, alignment: .center)
+//								 .background(Color.yellow)
+//								 .foregroundColor(.white)
+//								 .cornerRadius(10)
+//
+//		 }
+//					}
+//					 HStack {
+//					 Text("Item 3")
+//						 Spacer()
+//						 Button { rectangleColor = .black}
+//							 label: {
+//							 Image(systemName:"figure.stand")
+//								 .imageScale(.large)
+//								 .frame(width: 60, height: 35, alignment: .center)
+//								 .background(Color.black)
+//								 .foregroundColor(.white)
+//								 .cornerRadius(10)
+//							}
+//
+//					} // End of HStack
+//					 HStack {
+//					 Text("Item 4")
+//						 Spacer()
+//						 Button { rectangleColor = .white}
+//							 label: {
+//							 Image(systemName:"sleep")
+//								 .imageScale(.large)
+//								 .frame(width: 60, height: 35, alignment: .center)
+//								 .background(Color.white)
+//								 .foregroundColor(.black)
+//								 .cornerRadius(10)
+//
+//		 }
+//
+//				 } // End of HStack
+//					 HStack {
+//					 Text("Item 5")
+//						 Spacer()
+//						 Button { rectangleColor = .green}
+//							 label: {
+//							 Image(systemName:"paperplane")
+//								 .imageScale(.large)
+//								 .frame(width: 60, height: 35, alignment: .center)
+//								 .background(Color.green)
+//								 .foregroundColor(.white)
+//								 .cornerRadius(10)
+//
+//		 }
+//
+//				 } // End of HStack
+//				}
+//				Section()
+//			{
+//				ForEach(tops,id: \.self) {top in
+//						Text(top)
+//				}
+//			}
+//				Section
+//				{
+//					ForEach(bottoms,id: \.self) {bottom in
+//							Text(bottom)
+//					}
+//			}
+//			}
+			
+				List
+							{
+							Section()
+								{
+							ForEach(tops,id: \.self) {top in
+									Text(top)
 							}
-						
-					} // End of HStack
-					 HStack {
-					 Text("Item 4")
-						 Spacer()
-						 Button { rectangleColor = .white}
-							 label: {
-							 Image(systemName:"sleep")
-								 .imageScale(.large)
-								 .frame(width: 60, height: 35, alignment: .center)
-								 .background(Color.white)
-								 .foregroundColor(.black)
-								 .cornerRadius(10)
-								 
-		 }
-						 
-				 } // End of HStack
-					 HStack {
-					 Text("Item 5")
-						 Spacer()
-						 Button { rectangleColor = .green}
-							 label: {
-							 Image(systemName:"paperplane")
-								 .imageScale(.large)
-								 .frame(width: 60, height: 35, alignment: .center)
-								 .background(Color.green)
-								 .foregroundColor(.white)
-								 .cornerRadius(10)
-								 
-		 }
-						 
-				 } // End of HStack
-				 } // End of List
-				
-			
-
-			HStack(spacing: 35) {
-				Button { rectangleColor = .green}
-					label: {
-					Image(systemName:"filemenu.and.selection")
-						.imageScale(.large)
-						.frame(width: 60, height: 35, alignment: .center)
-						.background(Color.green)
-						.foregroundColor(.white)
-						.cornerRadius(10)
-}
-					.shadow(color: .green, radius: 5)
-		 		Button { rectangleColor = .orange}
-					label: {
-					Image(systemName:"person.fill.viewfinder")
-					.imageScale(.large)
-					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-					.background(Color.orange)
-					.foregroundColor(.white)
-					.cornerRadius(10)
-}
-					.shadow(color: .orange, radius: 5)
-		 		Button { rectangleColor = .blue}
-					label: {
+						}
+							Section
+								{
+								ForEach(bottoms,id: \.self) {bottom in
+										Text(bottom)
+								}
+			}
+						}
+			Spacer()
+			/* --------------------- */
+			HStack(spacing: 35)
+			{
+				Button { }
+					label:
+								{
+									Image(systemName:"filemenu.and.selection")
+									.imageScale(.large)
+									.frame(width: 60, height: 35, alignment: .center)
+									.background(Color.green)
+									.foregroundColor(.white)
+									.cornerRadius(10)
+								}
+									.shadow(color: .green, radius: 5)
+		 		Button { }
+					label:
+								 {
+									 Image(systemName:"person.fill.viewfinder")
+									 .imageScale(.large)
+									 .frame(width: 60, height: 35, alignment: .center)
+									 .background(Color.orange)
+									 .foregroundColor(.white)
+									 .cornerRadius(10)
+					}
+							 	 .shadow(color: .orange, radius: 5)
+		 		Button { }
+					label:
+					{
 					Image(systemName:"terminal")
 					.imageScale(.large)
 					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 					.background(Color.blue)
 					.foregroundColor(.white)
 					.cornerRadius(10)
-}
-					.shadow(color: .blue, radius: 5)
-		 		Button { rectangleColor = .purple}
-					label: {
+					}
+						.shadow(color: .blue, radius: 5)
+		 		Button { }
+					label:
+					{
 					Image(systemName:"doc.plaintext")
 					.imageScale(.large)
 					.frame(width: 60, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -143,9 +178,8 @@ struct ContentView: View {
 					.foregroundColor(.white)
 					.cornerRadius(10)
 							 }
-					.shadow(color: .purple, radius: 5)
-				
-		 }
+						.shadow(color: .purple, radius: 5)
+
 			.padding()
 			
 ////			 VStack {
@@ -364,8 +398,11 @@ struct ContentView: View {
 //////		 	}
 //    } // End of VStack
 		}
+			/* --------------------- */
 }
-
+	/* --------------------- */
+}
+/* --------------------- */
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 			Group {
