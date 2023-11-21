@@ -22,11 +22,13 @@ struct ContentView: View {
 					Text("XXX# Engamgement Store")
 					.font(.title)
 					.fontWeight(.heavy)
+					.foregroundColor(.white)
 		 			Text("Welcome Username")
 					.font(.callout)
 					.fontWeight(.semibold)
-					.foregroundColor(.gray)
+						.foregroundColor(Color(red: 0.972, green: 0.973, blue: 0.972))
 		 		} // Contains app screen title and greeting message
+			.padding(.leading, 10.0)
 // MARK: Button to return to the main screen
 			Button { }
 				label:
@@ -34,13 +36,15 @@ struct ContentView: View {
 						Image(systemName:"house.fill")
 						.imageScale(.medium)
 							.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-						.frame(width: 35, height: 35, alignment: .center)
+						.frame(width: 30, height: 35, alignment: .center)
 						.background(Color.blue)
 						.foregroundColor(.white)
 						.cornerRadius(10)
 					}
 						.shadow(color: .blue, radius: 5)
+				.padding(.trailing, 10.0)
 		 } // Contains VStack of greeting message and Home button
+	.background(Color(red: 0.14, green: 0.183, blue: 0.249))
 		 Divider()
 			// MARK: Scroll View of up comming engagements
 			ScrollView(.horizontal, showsIndicators: false) {
@@ -49,7 +53,7 @@ struct ContentView: View {
 					{
 													Image(systemName: "person.fill")
 													 .resizable()
-													 .background(Color.clear)
+													 .background(Color.blue)
 													 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
 													 .frame(width: 32, height: 32)
 					}
@@ -61,11 +65,12 @@ struct ContentView: View {
 											.frame(width: 20, height: 20, alignment: .center)
 											.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
 										.background(Color.clear)
-										.foregroundColor(.blue)
+										.foregroundColor(.yellow)
 										.cornerRadius(10)
-										} // Button that adds swag items to the shopping cart
+										} // Display User requests for items button (Admin and SuperUser Feature
 				} // HStack of Engagement info / stories
 											.padding()
+											.clipShape(Circle())
 					} // Horizontal Scroll view that contains HStacks of Engagement info
 			Spacer()
 			Divider()
@@ -386,11 +391,11 @@ struct ContentView: View {
 							 .foregroundColor(Color.blue)
 							 .frame(width: 16, height: 16)
 					.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-					Text("Username")
+					Text("Username") // Contains a user id call reference to identify the user
 							 .font(.caption)
-					Text("Location")
+					Text("Location") // Contains a call to the assigned location the user is at (Geofence if possible)*
 							 .font(.caption2)
-					} // Contains User information (Picture, Username, Station code)
+					} // Refractor Code to be a for loop that contains User information (Picture, Username, Station code)
 					Spacer()
 					Button { }
 							 label:
@@ -401,7 +406,7 @@ struct ContentView: View {
 										.background(Color.blue)
 										.foregroundColor(.white)
 										.cornerRadius(10)
-										} // Button that adds swag items to the shopping cart
+										} // Shopping Cart Button - Adds item to basket
 							 .shadow(color: .blue, radius: 5)
 					Button { }
 							 label:
@@ -412,9 +417,9 @@ struct ContentView: View {
 										.background(Color.blue)
 										.foregroundColor(.white)
 										.cornerRadius(10)
-										} // Button that adds items to the users wishlist
+										} // Plus Button adds item to wish list
 							 .shadow(color: .blue, radius: 5)
-					} // Contains the User info stack and adds to cart and wishlist buttons
+					} // Refractor Code to be a for loop that contains the User info stack and adds to cart and wishlist buttons
 // MARK:
 					HStack {
 					VStack(alignment: .leading) { Image(systemName: "person.fill")
@@ -524,10 +529,46 @@ struct ContentView: View {
 							 .shadow(color: .blue, radius: 5)
 					} // Contains the User info stack and adds to cart and wishlist buttons
 		 } // Overview of all Users in the HStack
-		 .padding()
+		.padding()
+				VStack {
+					ScrollView(.horizontal, showsIndicators: false) {
+						ZStack(alignment: .bottomTrailing) {
+							HStack
+							{
+															Image(systemName: "person.fill")
+															 .resizable()
+															 .background(Color.blue)
+															 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+															 .frame(width: 32, height: 32)
+							}
+							Button { }
+									 label:
+												{
+												Image(systemName:"star.fill")
+												.imageScale(.small)
+													.frame(width: 20, height: 20, alignment: .center)
+													.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+												.background(Color.clear)
+												.foregroundColor(.yellow)
+												.cornerRadius(10)
+												} // Display User requests for items button (Admin and SuperUser Feature
+						} // HStack of Engagement info / stories
+													.padding()
+													.clipShape(Circle())
+							} // Horizontal Scroll view that contains HStacks of Engagement info
+					.frame(width: 380, height: 40, alignment: .leading)
+					Text("Featured Requests")
+						.font(.callout)
+						.fontWeight(.bold)
+						.frame(width: 150, height: 25, alignment: .center)
+						.foregroundColor(Color.yellow)
+						.background(Color(red: 0.14, green: 0.183, blue: 0.253))
+						
+				}
 		 Spacer()
 		 } // End of Scroll View container
 			Divider()
+			
 			  Spacer()
 			/* --------------------- */
 			HStack()
