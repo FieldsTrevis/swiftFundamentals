@@ -46,34 +46,8 @@ struct ContentView: View {
 		 } // Contains VStack of greeting message and Home button
 	.background(Color(red: 0.14, green: 0.183, blue: 0.249))
 		 Divider()
-			// MARK: Scroll View of up comming engagements
-			ScrollView(.horizontal, showsIndicators: false) {
-				ZStack(alignment: .bottomTrailing) {
-					HStack
-					{
-													Image(systemName: "person.fill")
-													 .resizable()
-													 .background(Color.blue)
-													 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-													 .frame(width: 32, height: 32)
-					}
-					Button { }
-							 label:
-										{
-										Image(systemName:"star.fill")
-										.imageScale(.small)
-											.frame(width: 20, height: 20, alignment: .center)
-											.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-										.background(Color.clear)
-										.foregroundColor(.yellow)
-										.cornerRadius(10)
-										} // Display User requests for items button (Admin and SuperUser Feature
-				} // HStack of Engagement info / stories
-											.padding()
-											.clipShape(Circle())
-					} // Horizontal Scroll view that contains HStacks of Engagement info
 			Spacer()
-			Divider()
+			
 //	List
 //			{
 //				Section
@@ -635,7 +609,7 @@ struct ContentView: View {
 		 Spacer()
 		 } // End of Scroll View container
 			Divider()
-			  Spacer()
+		 	Spacer()
 			HStack()
 			{
 				VStack {
