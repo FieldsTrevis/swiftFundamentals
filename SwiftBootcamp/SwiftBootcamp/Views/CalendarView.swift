@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct CalendarView: View {
+	let columns: [GridItem] = [.init(), .init(), .init(), .init(), .init()]
     var body: some View {
+			
+		
+			
 			Text("Calendar")
 				.font(.title)
 				Spacer()
 			ScrollView(showsIndicators: false) {
 				ScrollView(.horizontal,showsIndicators: false) {
-					Text("Previous")
+					LazyVGrid(columns: columns)
+						{ ForEach(0 ... 1, id:\.self){ item in Rectangle()
+						.frame(width: 65, height: 45)
+					}
+					}
+					.frame(width: 350, height: 50)
+					
 				} // Grid View of Photos
 				.frame(width: 370, height: 50, alignment: .center)
 				ZStack {
@@ -38,7 +48,7 @@ struct CalendarView: View {
 							Text("Info")
 								.font(.caption2)
 						} .frame(width: 310, height: 32, alignment: .topLeading)
-					} }
+					} } // Emoji and Event with Description
 				ZStack {
 					Capsule()
 						.fill(Color.yellow)
@@ -60,7 +70,7 @@ struct CalendarView: View {
 							Text("Info")
 								.font(.caption2)
 						} .frame(width: 310, height: 32, alignment: .topLeading)
-					} }
+					} } // Emoji and Event with Description
 				ZStack {
 					Capsule()
 						.fill(Color.purple)
@@ -82,7 +92,7 @@ struct CalendarView: View {
 							Text("Info")
 								.font(.caption2)
 						} .frame(width: 310, height: 32, alignment: .topLeading)
-					} }
+					} } // Emoji and Event with Description
 				ZStack {
 					Capsule()
 						.fill(Color.pink)
@@ -104,7 +114,7 @@ struct CalendarView: View {
 							Text("Info")
 								.font(.caption2)
 						} .frame(width: 310, height: 32, alignment: .topLeading)
-					} }
+					} } // Emoji and Event with Description
 				ZStack {
 					Capsule()
 						.fill(Color.orange)
@@ -126,7 +136,7 @@ struct CalendarView: View {
 							Text("Info")
 								.font(.caption2)
 						} .frame(width: 310, height: 32, alignment: .topLeading)
-					} }
+					} } // Emoji and Event with Description
 				ZStack {
 					Capsule()
 						.fill(Color.red)
@@ -148,7 +158,7 @@ struct CalendarView: View {
 							Text("Info")
 								.font(.caption2)
 						} .frame(width: 310, height: 32, alignment: .topLeading)
-					} }
+					} } // Emoji and Event with Description
 				ZStack {
 					Capsule()
 						.fill(Color.green)
@@ -170,7 +180,7 @@ struct CalendarView: View {
 							Text("Info")
 								.font(.caption2)
 						} .frame(width: 310, height: 32, alignment: .topLeading)
-					} }
+					} } // Emoji and Event with Description
 				ScrollView(.horizontal, showsIndicators: false) {
 					Text("Upcoming")
 				} // Grid View of Photos

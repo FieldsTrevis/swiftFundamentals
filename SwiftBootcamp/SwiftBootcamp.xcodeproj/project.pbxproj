@@ -13,6 +13,7 @@
 		6E6401722B04824500717BFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6401712B04824500717BFF /* Preview Assets.xcassets */; };
 		6EF3AD8E2B0C587600322F6A /* ProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3AD8D2B0C587500322F6A /* ProfileSettings.swift */; };
 		6EF3AD912B0CEA9600322F6A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3AD902B0CEA9600322F6A /* CalendarView.swift */; };
+		6EF3AD952B0D2A0D00322F6A /* NavBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3AD942B0D2A0D00322F6A /* NavBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6E6401732B04824500717BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EF3AD8D2B0C587500322F6A /* ProfileSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettings.swift; sourceTree = "<group>"; };
 		6EF3AD902B0CEA9600322F6A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		6EF3AD942B0D2A0D00322F6A /* NavBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				6E64016C2B0481F200717BFF /* ContentView.swift */,
 				6EF3AD902B0CEA9600322F6A /* CalendarView.swift */,
 				6EF3AD8D2B0C587500322F6A /* ProfileSettings.swift */,
+				6EF3AD942B0D2A0D00322F6A /* NavBootcamp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E64016D2B0481F200717BFF /* ContentView.swift in Sources */,
+				6EF3AD952B0D2A0D00322F6A /* NavBootcamp.swift in Sources */,
 				6E64016B2B0481F200717BFF /* SwiftBootcampApp.swift in Sources */,
 				6EF3AD912B0CEA9600322F6A /* CalendarView.swift in Sources */,
 				6EF3AD8E2B0C587600322F6A /* ProfileSettings.swift in Sources */,
