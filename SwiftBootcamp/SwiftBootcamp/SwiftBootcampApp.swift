@@ -14,7 +14,8 @@ struct SwiftBootcampApp: App {
 					//CalendarView()
 					//ProfileSettings()
 					//ContentView()
-					NavBootcamp()
+					//NavBootcamp()
+					NavBootcamp2()
         }
     }
 }

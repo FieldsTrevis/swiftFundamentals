@@ -35,6 +35,11 @@ struct NavBootcamp: View {
 						TextField("Top Size", text: $topSize)
 						TextField("Bottom Size", text:$bottomSize)
 					}
+					List() {
+						Text("Hello")
+						Text("Whats your name")
+							
+					}
 				}
 				} // End of VStack that contains the user Profile image and a Form to select items
 				.navigationTitle("Welcome! \(username)")
