@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwiftBootcamp
 //
-//  Created by Trevis Jontaé Fields on 11/14/23.
+//  Created by Trevis Fields on 11/14/23.
 //
 
 import SwiftUI
@@ -16,10 +16,10 @@ struct ContentView: View {
 	/* --------------------- */
     var body: some View
 											  {
-// MARK: App Title Screen and Main Screen Section
+// MARK: Main Screen
 	HStack(alignment: .center) {
 			VStack(alignment: .leading) {
-					Text("XXX# Engamgement Store")
+					Text("XXX# Engamgement Store") // Displays Location code
 					.font(.title)
 					.fontWeight(.heavy)
 					.foregroundColor(.white)
@@ -383,6 +383,34 @@ struct ContentView: View {
 //			// MARK: End of List Section
 			
 			ScrollView(showsIndicators: false) {
+				// MARK: Scroll View of up comming engagements
+				ScrollView(.horizontal, showsIndicators: false) {
+					ZStack(alignment: .bottomTrailing) {
+						HStack
+						{
+														Image(systemName: "person.fill")
+														 .resizable()
+														 .background(Color.blue)
+														 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+														 .frame(width: 32, height: 32)
+						}
+						Button { }
+								 label:
+											{
+											Image(systemName:"star.fill")
+											.imageScale(.small)
+												.frame(width: 20, height: 20, alignment: .center)
+												.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+											.background(Color.clear)
+											.foregroundColor(.yellow)
+											.cornerRadius(10)
+											} // Display User requests for items button (Admin and SuperUser Feature
+					} // HStack of Engagement info / stories
+												.padding()
+												.clipShape(Circle())
+						} // Horizontal Scroll view that contains HStacks of Engagement info
+				Spacer()
+				Divider()
 		 VStack(alignment: .leading) {
 // MARK:
 					HStack {
@@ -564,13 +592,50 @@ struct ContentView: View {
 						.foregroundColor(Color.yellow)
 						.background(Color(red: 0.14, green: 0.183, blue: 0.253))
 						
+				} // Featured Requests
+				VStack(alignment: .leading) {
+					// MARK:
+										HStack {
+										VStack(alignment: .leading) { Image(systemName: "person.fill")
+										.resizable()
+												 .foregroundColor(Color.blue)
+												 .frame(width: 16, height: 16)
+										.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+										Text("Username") // Contains a user id call reference to identify the user
+												 .font(.caption)
+										Text("Location") // Contains a call to the assigned location the user is at (Geofence if possible)*
+												 .font(.caption2)
+										} // Refractor Code to be a for loop that contains User information (Picture, Username, Station code)
+										Spacer()
+										Button { }
+												 label:
+															{
+															Image(systemName:"cart.fill")
+															.imageScale(.small)
+															.frame(width: 30, height: 25, alignment: .center)
+															.background(Color.blue)
+															.foregroundColor(.white)
+															.cornerRadius(10)
+															} // Shopping Cart Button - Adds item to basket
+												 .shadow(color: .blue, radius: 5)
+										Button { }
+												 label:
+															{
+															Image(systemName:"plus")
+															.imageScale(.medium)
+															.frame(width: 30, height: 25, alignment: .center)
+															.background(Color.blue)
+															.foregroundColor(.white)
+															.cornerRadius(10)
+															} // Plus Button adds item to wish list
+												 .shadow(color: .blue, radius: 5)
+										} // Refractor Code to be a for loop that contains the User info stack and adds to cart and wishlist buttons
 				}
+				.padding()
 		 Spacer()
 		 } // End of Scroll View container
 			Divider()
-			
 			  Spacer()
-			/* --------------------- */
 			HStack()
 			{
 				VStack {
@@ -656,11 +721,7 @@ struct ContentView: View {
 			} // End of Tab bar selection buttons menu
 			
 			/*
-			In this section of the code we have created an HStack that contains a section of buttons that can take the user to dufferent areas within the app. Currently the build for each button leads to no location and are only showing system images and a color with a shawdow background.
 			- Notes:
-			MARK: HStack
-			MARK: Button {Target Action or Destionation}
-			MARK: label: { Code that contains the button design and look as well as any Text that may describe the look of the button }
 			*/
 			
 } // End of View
