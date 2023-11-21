@@ -27,7 +27,7 @@ struct ContentView: View {
 					.font(.callout)
 					.fontWeight(.semibold)
 						.foregroundColor(Color(red: 0.972, green: 0.973, blue: 0.972))
-		 		} // Contains app screen title and greeting message
+		 		} // Contains app screen title and greeting message 
 			.padding(.leading, 10.0)
 // MARK: Button to return to the main screen
 			Button { }
