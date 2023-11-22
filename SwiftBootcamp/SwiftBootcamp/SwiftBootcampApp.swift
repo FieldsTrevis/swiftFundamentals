@@ -15,7 +15,8 @@ struct SwiftBootcampApp: App {
 					//ProfileSettings()
 					//ContentView()
 					//NavBootcamp()
-					NavBootcamp2()
+					//NavBootcamp2()
+					LoginSignupView()
         }
     }
 }

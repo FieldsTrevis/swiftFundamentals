@@ -1,5 +1,5 @@
 //
-//  NavBootcamp.swift
+//  SwagOrderFormView.swift
 //  SwiftBootcamp
 //
 //  Created by Trevis Jontaé Fields on 11/21/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavBootcamp: View {
+struct SwagOrderFormView: View {
 	@State private var firstName = ""
 	@State private var lastName = ""
 	@State  private var username = ""
@@ -15,7 +15,7 @@ struct NavBootcamp: View {
 	@State private var managerUserName = ""
 	@State private var topSize = ""
 	@State private var bottomSize = ""
-    var body: some View {
+		var body: some View {
 			NavigationView {
 				VStack {
 					HStack {	ProfileImage(imageName: "Squirtle-1")
@@ -23,22 +23,15 @@ struct NavBootcamp: View {
 					.padding()
 					} // HStack to push Profile Image over to the left side of the screen
 				Form {
-					Section( header: Text("Manager")) {
+					Section( header: Text("Manager"))
+					{
 						TextField("User Name", text:$managerUserName)
 					}
-					Section( header: Text("Personal Info")) {
+					Section( header: Text("Personal Info"))
+					{
 						TextField("First Name", text: $firstName)
 						TextField("Last Name", text:$lastName)
 						TextField("User Name", text:$username)
-					}
-					Section( header: Text("Sizing")) {
-						TextField("Top Size", text: $topSize)
-						TextField("Bottom Size", text:$bottomSize)
-					}
-					List() {
-						Text("Hello")
-						Text("Whats your name")
-							
 					}
 				}
 				} // End of VStack that contains the user Profile image and a Form to select items
@@ -55,23 +48,16 @@ struct NavBootcamp: View {
 					}
 				}
 			}
-    }
+		}
 	.accentColor(.green)
 }
 }
 
-struct NavBootcamp_Previews: PreviewProvider {
-    static var previews: some View {
-        NavBootcamp()
-    }
+struct SwagOrderFormView_Previews: PreviewProvider {
+		static var previews: some View {
+			SwagOrderFormView()
+		}
 }
 
-struct ProfileImage: View {
-	var imageName: String
-	var body: some View {
-		Image(imageName)
-			.resizable()
-			.frame(width: 48, height: 48)
-			.clipShape(Circle())
-	}
-}
+
+

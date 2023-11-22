@@ -17,6 +17,7 @@ struct NavBootcamp2: View {
 		
 	var body: some View {
 			NavigationView {
+		 
 				VStack {
 					HStack {	ProfileImage(imageName: "Squirtle-1")
 					Spacer()
