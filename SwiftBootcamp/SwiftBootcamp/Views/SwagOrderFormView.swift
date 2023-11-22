@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SwagOrderFormView: View {
-	@State private var firstName = ""
-	@State private var lastName = ""
-	@State  private var username = ""
-	@State private var phoneNumber  = ""
-	@State private var managerUserName = ""
-	@State private var topSize = ""
-	@State private var bottomSize = ""
+	@State private var trainerName = ""
+	
+	@State private var trainerID = ""
+	@State private var trainerRegistrationNumber = ""
+	@State var homeCity = ""
+	@State var homeState = ""
+	@State var nickname = ""
+	@State var item = ""
+	
 		var body: some View {
 			NavigationView {
 				VStack {
@@ -23,33 +25,32 @@ struct SwagOrderFormView: View {
 					.padding()
 					} // HStack to push Profile Image over to the left side of the screen
 				Form {
-					Section( header: Text("Manager"))
+					Section( header: Text("Trainer Info"))
 					{
-						TextField("User Name", text:$managerUserName)
+						TextField("Enter Trainer Name:",text: $trainerName)
+						TextField("Enter Nickname: ",text: $nickname)
+						Text("Trainer ID #: \(trainerID)")
+						Text("Trainer Registration #: \(trainerRegistrationNumber)")
+					
 					}
-					Section( header: Text("Personal Info"))
+					Section( header: Text("Home Town / State"))
 					{
-						TextField("First Name", text: $firstName)
-						TextField("Last Name", text:$lastName)
-						TextField("User Name", text:$username)
+						Text("City: \(homeCity)")
+						Text("State: \(homeState)")
 					}
+
 				}
 				} // End of VStack that contains the user Profile image and a Form to select items
-				.navigationTitle("Welcome! \(username)")
+				.navigationTitle("Welcome! \(trainerName)")
 				.toolbar {
-					ToolbarItemGroup(placement: .navigationBarLeading) {
-							Button { } label: {
-							Label("Return", systemImage:"house.fill")
-						}
-				}
 					ToolbarItemGroup(placement: .navigationBarTrailing) {
 							Button { } label: {
-					Label("Save", systemImage:"square.and.arrow.down.fill")
+					Label("Send", systemImage:"square.and.arrow.up.fill")
 					}
 				}
 			}
 		}
-	.accentColor(.green)
+	.accentColor(.purple)
 }
 }
 
