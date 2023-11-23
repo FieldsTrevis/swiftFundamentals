@@ -11,10 +11,10 @@ import SwiftUI
 struct SwiftBootcampApp: App {
     var body: some Scene {
         WindowGroup {
-					CalendarView()
+					//CalendarView()
 					//ProfileSettings()
 					//ContentView()
-					//NavBootcamp()
+					NavBootcamp()
 					//NavBootcamp2()
 					//LoginSignupView()
 					//SwagOrderFormView()

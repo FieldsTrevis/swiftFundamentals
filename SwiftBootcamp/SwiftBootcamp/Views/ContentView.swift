@@ -558,7 +558,7 @@ struct ContentView: View {
 													.padding()
 													.clipShape(Circle())
 							} // Horizontal Scroll view that contains HStacks of Engagement info
-					.frame(width: 380, height: 40, alignment: .leading)
+					
 					Text("Featured Requests")
 						.font(.callout)
 						.fontWeight(.bold)
