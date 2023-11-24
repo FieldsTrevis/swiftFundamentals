@@ -17,6 +17,7 @@ struct SwagOrderFormView: View {
 	@State var nickname = ""
 	@State var item = ""
 	
+	@State private var pokemonType = Type.pokemonTypes()
 		var body: some View {
 			NavigationView {
 				VStack {
@@ -38,6 +39,16 @@ struct SwagOrderFormView: View {
 						Text("City: \(homeCity)")
 						Text("State: \(homeState)")
 					}
+					List
+					{
+						Section(header: Text("List Design")) {
+								
+						}
+						Section( header: Text("Hello World")) {
+							
+						}
+					}
+					
 
 				}
 				} // End of VStack that contains the user Profile image and a Form to select items
@@ -60,5 +71,31 @@ struct SwagOrderFormView_Previews: PreviewProvider {
 		}
 }
 
-
+struct Type: Identifiable, Hashable {
+	var name: String
+	var icon: String
+	var isFavorite: Bool
+	var color: Color
+	let id = UUID()
+	static func pokemonTypes() -> [Type] {
+		return [Type(name: "Grass", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Water", icon: "", isFavorite: false, color: .green),
+						Type(name: "Fire", icon: "", isFavorite: false, color: .red),
+						Type(name: "Normal", icon: "", isFavorite: false, color: .clear),
+						Type(name: "Electirc", icon: "", isFavorite: false, color: .yellow),
+						Type(name: "Ground", icon: "", isFavorite: false, color: .white),
+						Type(name: "Rock", icon: "", isFavorite: false, color: .white),
+						Type(name: "Dragon", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Ice", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Ghost", icon: "", isFavorite: true, color: .purple),
+						Type(name: "Fairy", icon: "", isFavorite: false, color: .pink),
+						Type(name: "Steel", icon: "", isFavorite: false, color: .gray),
+						Type(name: "Dark", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Posion", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Flying", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Bug", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Psychic", icon: "", isFavorite: false, color: .blue),
+						Type(name: "Fighting", icon: "", isFavorite: false, color: .blue)]
+	}
+}
 

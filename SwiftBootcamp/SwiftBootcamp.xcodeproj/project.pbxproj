@@ -18,6 +18,8 @@
 		6EF3AD9B2B0D406900322F6A /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3AD9A2B0D406900322F6A /* ListsView.swift */; };
 		6EF3AD9E2B0D51B100322F6A /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3AD9D2B0D51B100322F6A /* LoginSignupView.swift */; };
 		6EF3ADA12B0D8F5A00322F6A /* SwagOrderFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3ADA02B0D8F5600322F6A /* SwagOrderFormView.swift */; };
+		6EF51C1E2B1015CA009E7619 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF51C1D2B1015C8009E7619 /* Test.swift */; };
+		6EF51C212B105F3F009E7619 /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF51C202B105F3F009E7619 /* Test2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		6EF3AD9A2B0D406900322F6A /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		6EF3AD9D2B0D51B100322F6A /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
 		6EF3ADA02B0D8F5600322F6A /* SwagOrderFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwagOrderFormView.swift; sourceTree = "<group>"; };
+		6EF51C1D2B1015C8009E7619 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		6EF51C202B105F3F009E7619 /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				6EF3AD9A2B0D406900322F6A /* ListsView.swift */,
 				6EF3AD9D2B0D51B100322F6A /* LoginSignupView.swift */,
 				6EF3ADA02B0D8F5600322F6A /* SwagOrderFormView.swift */,
+				6EF51C1D2B1015C8009E7619 /* Test.swift */,
+				6EF51C202B105F3F009E7619 /* Test2.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,9 +177,11 @@
 				6EF3AD9B2B0D406900322F6A /* ListsView.swift in Sources */,
 				6EF3AD9E2B0D51B100322F6A /* LoginSignupView.swift in Sources */,
 				6EF3AD952B0D2A0D00322F6A /* NavBootcamp.swift in Sources */,
+				6EF51C212B105F3F009E7619 /* Test2.swift in Sources */,
 				6EF3ADA12B0D8F5A00322F6A /* SwagOrderFormView.swift in Sources */,
 				6E64016B2B0481F200717BFF /* SwiftBootcampApp.swift in Sources */,
 				6EF3AD912B0CEA9600322F6A /* CalendarView.swift in Sources */,
+				6EF51C1E2B1015CA009E7619 /* Test.swift in Sources */,
 				6EF3AD8E2B0C587600322F6A /* ProfileSettings.swift in Sources */,
 				6EF3AD982B0D3C7300322F6A /* NavBootcamp2.swift in Sources */,
 			);
