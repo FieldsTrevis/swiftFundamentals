@@ -18,7 +18,8 @@ struct SwiftBootcampApp: App {
 					//NavBootcamp2()
 					//LoginSignupView()
 					//SwagOrderFormView()
-					Test()
+					//Test()
+					Test2()
         }
     }
 }
