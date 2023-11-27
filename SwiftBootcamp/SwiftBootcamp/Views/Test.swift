@@ -7,59 +7,47 @@
 
 import SwiftUI
 
-struct Test: View
-	{
-	var body: some View
-	{
-NavigationView
-{
-Form {
-Section( header: Text("Pokemon Encounters"))
-{ Text("Hello")	}
-}
+struct Test: View {
+var body: some View {
 
-.navigationTitle("Pokedex")
-.toolbar
-{
-ToolbarItemGroup(placement: .navigationBarLeading)
-{
-Button
-{ } label:
-{
+NavigationView {
+
+Form {
+Section( header: Text("Pokemon Encounters")) {
+	Text("Hello") }
+		}
+
+.toolbar {
+ToolbarItemGroup(placement: .navigationBarLeading) {
+Button { } label: {
 Label("Take a photo", systemImage:"camera.fill")
 }
 }
-					
-ToolbarItemGroup(placement: .navigationBarTrailing)
-{
-Button
-{ } label:
-{
+	
+ToolbarItemGroup(placement: .navigationBarTrailing) {
+Button { } label: {
 Label("Save", systemImage:"ticket.fill")
 }
 }
 
-ToolbarItemGroup(placement: .navigationBarTrailing)
-{
-Button
-{ } label:
-{
+ToolbarItemGroup(placement: .navigationBarTrailing) {
+Button { } label: {
 Label("Save", systemImage:"leaf.fill")
 }
 }
 
-ToolbarItemGroup(placement: .navigationBarTrailing)
-{
-Button
-{ } label:
-{
+ToolbarItemGroup(placement: .navigationBarTrailing) {
+Button { } label: {
 Label("Account", systemImage:"banknote.fill")
 }
 }
-}
-	
+
+		}
+
+.navigationTitle("Pokedex")
 }
 .accentColor(.red)
+
 }
 }
 

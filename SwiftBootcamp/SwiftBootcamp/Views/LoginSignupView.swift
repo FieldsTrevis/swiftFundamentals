@@ -40,6 +40,8 @@ Rectangle()
 .opacity(0.4)
 TextField("Search Here", text: $pokemonName)
 }
+		NavigationLink(destination: ContentView()) {
+		}
 			}
 Section( header: Text("Trainer Info"))
 {
