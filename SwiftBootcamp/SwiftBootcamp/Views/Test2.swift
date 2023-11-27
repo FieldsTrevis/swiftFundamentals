@@ -10,21 +10,23 @@ import SwiftUI
 struct Test2: View {
     var body: some View {
 			TabView {
-					Text("Bag Details")
-							.tabItem {
-									Image(systemName: "bag.fill")
-									Text("Bag")
-							}
-					Text("Pokemon PC Details")
-							.tabItem {
-									Image(systemName: "laptopcomputer.and.iphone")
-									Text("PC")
-							}
-					Text("Profile Details")
-							.tabItem {
-									Image(systemName: "person.2.fill")
-									Text("Profile")
-							}
+				Test()
+					.tabItem {Image(systemName: "iphone")
+						Text("Pokedex")
+					}
+				NavBootcamp2()
+					.tabItem {Image(systemName: "lasso")
+						Text("Calendar")
+					}
+				SwagOrderFormView()
+					.tabItem {Image(systemName: "note.text")
+						Text("Swag")
+					}
+				NavBootcamp()
+					.tabItem {Image(systemName: "person.2.fill")
+						Text("Profile")
+					}
+				
 			}
 			.accentColor(.red)
 			.font(.headline)
