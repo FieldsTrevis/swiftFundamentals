@@ -1,5 +1,5 @@
 //
-//  Map.swift
+//  PokemonBoxes.swift
 //  Pokedex
 //
 //  Created by Trevis Jontaé Fields on 11/27/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Map: View {
+struct PokemonBoxes: View {
     var body: some View {
-        Text("Regions View")
+        Text("Pokemon Boxes")
     }
 }
 
-struct Map_Previews: PreviewProvider {
+struct PokemonBoxes_Previews: PreviewProvider {
     static var previews: some View {
-        Map()
+        PokemonBoxes()
     }
 }

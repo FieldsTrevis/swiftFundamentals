@@ -10,17 +10,17 @@ import SwiftUI
 struct Pokedex: View {
     var body: some View {
 			TabView {
-				Pokemon()
-					.tabItem {Image(systemName: "laptopcomputer")
-						Text("Pokemon PC")
-					}
-				Map()
-					.tabItem { Image(systemName: "map")
-						Text("Map")
-					}
 				Photos()
 					.tabItem {Image(systemName: "photo")
 						Text("Photos")
+					}
+				Regions()
+					.tabItem { Image(systemName: "map")
+						Text("Map")
+					}
+				PokemonBoxes()
+					.tabItem {Image(systemName: "laptopcomputer")
+						Text("Pokemon PC")
 					}
 				TrainerCard()
 					.tabItem {Image(systemName: "person.fill")
@@ -28,12 +28,8 @@ struct Pokedex: View {
 					}
 					
 			}
-			.accentColor(Color.green)
+			.accentColor(Color.red)
     }
 }
 
-struct Pokedex_Previews: PreviewProvider {
-    static var previews: some View {
-        Pokedex()
-    }
-}
+

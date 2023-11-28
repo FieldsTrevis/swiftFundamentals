@@ -15,3 +15,9 @@ struct PokedexApp: App {
         }
     }
 }
+
+struct PokedexApp_Previews: PreviewProvider {
+	static var previews: some View {
+		Pokedex()
+	}
+}
