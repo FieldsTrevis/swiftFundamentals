@@ -102,21 +102,6 @@ struct Photos: View {
 					}
 						.imageScale(.small)
 					}
-					HStack() {
-					ProfileImage(imageName: "Milky_Way_stardust")
-						Divider()
-							Image("Milky_Way_stardust")
-							.resizable()
-							.frame(width: 235, height: 100)
-								.cornerRadius(99.0)
-						Spacer()
-						HStack() {
-						Image(systemName:"heart")
-						Image(systemName:"paperplane")
-						Image(systemName:"cross")
-					}
-						.imageScale(.small)
-					}
 				}
 				
 				

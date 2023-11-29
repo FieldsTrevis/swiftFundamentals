@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct ProfileImage: View {
-	var imageName: String
-	var body: some View {
-		Image(imageName)
-			.resizable()
-			.frame(width: 48, height: 48)
-			.clipShape(Circle())
-	}
-}
 
 struct TrainerCard: View {
     var body: some View {
