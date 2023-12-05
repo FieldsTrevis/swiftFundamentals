@@ -14,30 +14,23 @@ struct Regions: View {
 					Home()
 				.toolbar {
 					ToolbarItemGroup(placement: .navigationBarTrailing) {
-							Button { } label: {
-					Label("Bicycle Routes", systemImage:"bicycle")
-					}
-						Button { } label: {
-				Label("Travel to a new Region", systemImage:"airplane")
-				}
+					Button { } label: {
+		 Label("Routes", systemImage:"airplane.arrival")
+		 }
+					Button { } label: {
+		 Label("Travel to a new Region", systemImage:"airplane.departure")
+		 }
 				}
 					ToolbarItemGroup(placement: .navigationBarLeading) {
 						Button { } label: {
-						Label("What Region are you heading to", systemImage:"map.fill")
+						Label("What Region are you heading to", systemImage:"map")
 					 }}
 			}
-					.navigationTitle("Nihon")
+					.navigationTitle("Kanto")
 			}
         
     }
 }
-
-struct Regions_Previews: PreviewProvider {
-    static var previews: some View {
-        Regions()
-    }
-}
-
 struct Home: View {
 	@State var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.2048, longitude: 138.2529),latitudinalMeters: 1000000, longitudinalMeters: 1000000)
 	@State var tracking : MapUserTrackingMode = .follow
