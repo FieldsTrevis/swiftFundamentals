@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PokemonBoxes: View {
     var body: some View {
-        Text("Pokemon Boxes")
+        Text("Pokemon")
     }
 }
 
