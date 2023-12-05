@@ -15,21 +15,18 @@ struct Regions: View {
 				.toolbar {
 					ToolbarItemGroup(placement: .navigationBarTrailing) {
 							Button { } label: {
-					Label("Choose a Region", systemImage:"bicycle")
+					Label("Bicycle Routes", systemImage:"bicycle")
 					}
 						Button { } label: {
-				Label("Choose a Region", systemImage:"car.fill")
-				}
-						Button { } label: {
-				Label("Choose a Region", systemImage:"bus")
+				Label("Travel to a new Region", systemImage:"airplane")
 				}
 				}
 					ToolbarItemGroup(placement: .navigationBarLeading) {
 						Button { } label: {
-						Label("Choose a Region", systemImage:"map.fill")
+						Label("What Region are you heading to", systemImage:"map.fill")
 					 }}
 			}
-					.navigationTitle("Regions")
+					.navigationTitle("Nihon")
 			}
         
     }
@@ -42,7 +39,7 @@ struct Regions_Previews: PreviewProvider {
 }
 
 struct Home: View {
-	@State var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 13.086, longitude: 80.2769),latitudinalMeters: 10000, longitudinalMeters: 10000)
+	@State var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.2048, longitude: 138.2529),latitudinalMeters: 1000000, longitudinalMeters: 1000000)
 	@State var tracking : MapUserTrackingMode = .follow
 	var body: some View {
 		VStack {

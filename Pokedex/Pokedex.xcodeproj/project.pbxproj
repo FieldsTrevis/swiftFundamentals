@@ -46,9 +46,6 @@
 		6E2D05392B1561EE00D98C28 = {
 			isa = PBXGroup;
 			children = (
-				6E678F932B1EA437004F4DFE /* Trainer Info Views */,
-				6E678F922B1EA432004F4DFE /* Pokemon Info Views */,
-				6E678F912B1EA42A004F4DFE /* Region Info Views */,
 				6E2D05442B1561EF00D98C28 /* Pokedex */,
 				6E2D05432B1561EF00D98C28 /* Products */,
 			);
@@ -65,7 +62,10 @@
 		6E2D05442B1561EF00D98C28 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				6E9CFBC82B15B59C00250472 /* ProfileImageStruct.swift */,
+				6E2D05592B1563B000D98C28 /* TrainerCard.swift */,
 				6E2D05452B1561EF00D98C28 /* PokedexApp.swift */,
+				6E2D05602B15655600D98C28 /* Regions.swift */,
 				6E2D05472B1561EF00D98C28 /* Pokedex.swift */,
 				6E2D05632B1565AE00D98C28 /* Photos.swift */,
 				6E2D055D2B15648600D98C28 /* PokemonBoxes.swift */,
@@ -82,30 +82,6 @@
 				6E2D054C2B15623A00D98C28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		6E678F912B1EA42A004F4DFE /* Region Info Views */ = {
-			isa = PBXGroup;
-			children = (
-				6E2D05602B15655600D98C28 /* Regions.swift */,
-			);
-			path = "Region Info Views";
-			sourceTree = "<group>";
-		};
-		6E678F922B1EA432004F4DFE /* Pokemon Info Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Pokemon Info Views";
-			sourceTree = "<group>";
-		};
-		6E678F932B1EA437004F4DFE /* Trainer Info Views */ = {
-			isa = PBXGroup;
-			children = (
-				6E9CFBC82B15B59C00250472 /* ProfileImageStruct.swift */,
-				6E2D05592B1563B000D98C28 /* TrainerCard.swift */,
-			);
-			path = "Trainer Info Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
